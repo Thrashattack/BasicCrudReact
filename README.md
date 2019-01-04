@@ -1,7 +1,7 @@
 
 ### Implementação Full Stack de um CRUD básico em React, orientado a componentes de model view e controller
-#### É necessário um jsonServer servindo na porta 3001 (Edite /src/component/user/Const.jsx para alterar
-#### informações sobre o backend. 
+#### É necessário um jsonServer servindo na porta 3001 ( Edite /src/component/user/Const.jsx para alterar
+#### constantes do backend ). 
 #### Foi testado com json-server --watch dbfile --port XXXX
 
 ## Before Start!
