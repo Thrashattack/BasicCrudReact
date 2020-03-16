@@ -10,8 +10,7 @@ import Form from './Form'
 import {initialState, headerProps, baseUrl} from './Const'
 
 
-export default class UserCrud extends Component {
-    
+export default class UserCrud extends Component {    
     constructor(props) { // construtor da classe, binda todas as funções e seta o estado inicial
         super(props) 
         this.state = {...initialState}
@@ -22,20 +21,17 @@ export default class UserCrud extends Component {
 
     }
 
-
     componentWillMount() { // ouve atualizações de componentes para setar o estado 
                           // da lista de usuários na exibição atual, de acordo com a db
         axios(baseUrl)
         .then(resp => {
             this.setState({list: resp.data})
         })        
-    }
-    
+    }    
 
     clear () { //botão cancelar (limpa o estado atual)
         this.setState({user: initialState.user})
     }
-
     
     render () { //Renderização principal
         return ( // Main passando as propriedades do header atual.

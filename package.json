@@ -12,7 +12,12 @@
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2"
   },
+  "devDependencies": {
+    "json-server": "0.16.1"
+  },
   "scripts": {
+    "startDbWindows": "start cmd /c json-server --watch db/db.json --port '3001' ",
+    "startDbLinux": "json-server --watch db/db.json --port '3001' &",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

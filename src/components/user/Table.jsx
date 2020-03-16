@@ -25,11 +25,11 @@ function renderRows(props) {
                 <td className="col-3">{user.email}</td>
                 <td className="col-6 d-flex justify-content-start">
                     <button className="btn btn-warning"
-                        onClick={() => new Model().load(props, user)} >
+                        onClick={() => Model.load(props, user)} >
                         <i className="fa fa-pencil"></i>
                     </button>
                     <button className="btn btn-danger ml-2"
-                        onClick={() => new Model().remove(props, user)} >
+                        onClick={ () => window.confirm(`Deseja realmente remover ${user.name}?`) ?Model.remove(props, user) : 0} >
                         <i className="fa fa-trash"></i>
                     </button>
                 </td>

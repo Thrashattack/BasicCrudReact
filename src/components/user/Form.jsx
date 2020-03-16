@@ -11,7 +11,7 @@ export default props => //props recebe o this do objeto UserCrud que contem atri
                         <label htmlFor="">Nome</label>
                         <input type="text" className="form-control" name="name"
                                 value={props.state.user.name} //UserCrud.state.user.name 
-                                onChange={e => new Model().updateField(props, e) } // model precisa ser instanciada pra 
+                                onChange={e => Model.updateField(props, e) } // model precisa ser instanciada pra 
                                                                                    // funcionar, por alguma razão desconhecida....
                                 placeholder="Digite o nome..."/>
                     </div>
@@ -21,7 +21,7 @@ export default props => //props recebe o this do objeto UserCrud que contem atri
                         <label htmlFor="">E-mail</label>
                         <input type="text" className="form-control" name="email"
                                 value={props.state.user.email}
-                                onChange={e => new Model().updateField(props, e) }
+                                onChange={e => Model.updateField(props, e) }
                                 placeholder="Digite o email..."/>
                     </div>
                 </div>
@@ -29,10 +29,10 @@ export default props => //props recebe o this do objeto UserCrud que contem atri
             <hr/>
             <div className="row">
                 <div className="col-12 d-flex justify-content-end">
-                    <button onClick={ () => new Model().save(props)} className="btn btn-primary">
+                    <button onClick={ () => Model.save(props)} className="btn btn-primary">
                     Salvar
                     </button>
-                    <button onClick={ () => new Model().clear(props)} className="btn btn-secondary ml-2">
+                    <button onClick={ () => Model.clear(props)} className="btn btn-secondary ml-2">
                     Cancelar
                     </button>
                 </div>
