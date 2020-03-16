@@ -3,6 +3,12 @@
 #### É necessário um jsonServer servindo na porta 3001 ( Edite /src/component/user/Const.jsx para alterar
 #### constantes do backend ). 
 #### Foi testado com json-server --watch dbfile --port XXXX
+#### DB file - db/db.json
+
+### Custom Scripts
+> $ yarn startDbWindows ou yarn startDbLinux <br>-Inicia o banco de dados em um terminal separado<br>
+> $ yarn start <br>-Inicia o app<br>
+
 
 ## Before Start!
 
